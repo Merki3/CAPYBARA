@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5c9ad" />
+  <title>A Little Something for You</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="page">
+    <section class="card" aria-label="A comforting message from a capybara">
+      <button class="sound-btn" id="soundBtn" aria-label="Toggle gentle sound" title="Gentle sound">♪</button>
+
+      <div class="illustration-panel">
+        <div class="sun"></div>
+        <div class="cloud one"></div>
+        <div class="cloud two"></div>
+        <div class="sparkle" style="top:18%;left:18%;animation-delay:-1s"></div>
+        <div class="sparkle" style="top:30%;right:20%;animation-delay:-.3s"></div>
+        <div class="sparkle" style="top:47%;left:10%;animation-delay:-1.4s"></div>
+
+        <div class="shadow"></div>
+
+        <div class="capybara-wrap" id="capybara">
+          <div class="ear left"></div>
+          <div class="ear right"></div>
+
+          <div class="capy-body"></div>
+
+          <div class="capy-head">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="cheek left"></div>
+            <div class="cheek right"></div>
+            <div class="snout">
+              <div class="nose"></div>
+              <div class="mouth"></div>
+            </div>
+          </div>
+
+          <div class="arm left"></div>
+          <div class="arm right"></div>
+          <div class="foot left"></div>
+          <div class="foot right"></div>
+
+          <div class="flower" aria-hidden="true">
+            <div class="stem"></div>
+            <div class="leaf a"></div>
+            <div class="leaf b"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="flower-center"></div>
+          </div>
+        </div>
+
+        <div class="grass-blade" style="left:8%;transform:rotate(-8deg)"></div>
+        <div class="grass-blade" style="left:14%;height:38px;animation-delay:-1s"></div>
+        <div class="grass-blade" style="right:10%;height:48px;animation-delay:-.6s"></div>
+        <div class="grass-blade" style="right:18%;transform:rotate(6deg);height:68px"></div>
+      </div>
+
+      <div class="content-panel">
+        <section id="welcome">
+          <div class="top-label">A quiet little corner for you</div>
+          <h1>Dear you,</h1>
+          <p class="subtitle">
+            A small capybara has something gentle to tell you.
+            You can enter your name, or leave it blank and continue anonymously.
+          </p>
+
+          <div class="name-box">
+            <input
+              id="nameInput"
+              type="text"
+              maxlength="30"
+              autocomplete="off"
+              placeholder="Your name (optional)"
+              aria-label="Your name"
+            />
+            <button class="primary-btn" id="startBtn">Open the message</button>
+          </div>
+
+          <p class="tiny-note">Take your time. There is no need to rush here.</p>azsxdDEW
+        </section>
+
+        <section class="message-area" id="messageArea">
+          <div class="progress" id="progress"></div>
+          <div class="message-number" id="messageNumber"></div>
+          <h2 class="message-title" id="messageTitle"></h2>
+          <p class="message-text" id="messageText"></p>
+
+          <div class="final-note" id="finalNote"></div>
+
+          <div class="actions">
+            <button class="ghost-btn" id="backBtn">Back</button>
+            <button class="ghost-btn" id="hugBtn">Send a tiny hug</button>
+            <button class="primary-btn" id="nextBtn">Next</button>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+    <script src="script.js"></script>
+  <div class="watermark">@merkie</div>
+</body>
+</html>
